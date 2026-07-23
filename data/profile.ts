@@ -24,12 +24,12 @@ export const profile = {
   ],
 
   about:
-    "I'm a Technology Analyst at Barclays UK and a computer science grad from " +
-    "IIT (ISM) Dhanbad. At work I build AI tooling for incident triage on Barclays' " +
-    "Claude models. In my own time I keep shipping on-device models, agents, and " +
-    "eval-first pipelines, mostly because I like getting ML to actually hold up under " +
-    "real constraints instead of in a demo. Off the clock I'm a Manchester United fan " +
-    "through and through, and there's usually Pink Floyd or Guns N' Roses playing while I code.",
+    "Technology Analyst at Barclays UK and a computer science grad from IIT (ISM) " +
+    "Dhanbad. The day job is AI tooling for incident triage on Barclays' Claude models; " +
+    "everything else goes into on-device models, agents, and eval-first pipelines, mostly " +
+    "for the satisfaction of getting ML to hold up under real constraints instead of in a " +
+    "demo. Off the clock, a Manchester United fan through and through, usually with Pink " +
+    "Floyd or Guns N' Roses on while the code compiles.",
 
   // Served from public/resume.pdf. Empty string hides the Résumé link.
   resumeHref: "/resume.pdf",

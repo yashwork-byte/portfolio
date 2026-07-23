@@ -67,7 +67,7 @@ export const projects: Project[] = [
     name: "Field-naturalist logbook",
     blurb: "offline bird-ID logbook",
     description:
-      "Point it at a photo of a bird and a fine-tuned LFM2-VL tells you the species and writes up a proper observation, taxonomy and the traits it spotted included. It's small enough to run offline out in the field. I built it for the Liquid AI hackathon.",
+      "Point it at a photo of a bird and a fine-tuned LFM2-VL tells you the species and writes up a proper observation, taxonomy and the traits it spotted included. Small enough to run offline out in the field. Built for the Liquid AI hackathon.",
     highlights: [
       "fine-tuned the LFM2.5-VL-1.6B vision-language model",
       "gives you a structured observation, not just a label",
