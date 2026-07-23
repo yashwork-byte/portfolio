@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
-import { Fraunces } from "next/font/google";
+import { Anton, Oswald } from "next/font/google";
 import { profile } from "@/data/profile";
 import "./globals.css";
 
-// Display serif for the name, tagline, and section headings.
-// Self-hosted by next/font at build time — no runtime CDN request.
-const fraunces = Fraunces({
+// Condensed sports display — matchday poster energy.
+const anton = Anton({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
-  variable: "--font-serif",
+  weight: "400",
+  variable: "--font-display",
+  display: "swap",
+});
+
+// Condensed workhorse for kickers, buttons, scoreboard digits, nav.
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cond",
   display: "swap",
 });
 
@@ -23,28 +29,13 @@ export const metadata: Metadata = {
   },
 };
 
-// Runs before paint: applies a saved theme so there is no light/dark flash.
-const noFlashScript = `
-(function () {
-  try {
-    var t = localStorage.getItem("theme");
-    if (t === "light" || t === "dark") {
-      document.documentElement.setAttribute("data-theme", t);
-    }
-  } catch (e) {}
-})();
-`;
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={fraunces.variable} suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: noFlashScript }} />
-      </head>
+    <html lang="en" className={`${anton.variable} ${oswald.variable}`}>
       <body>{children}</body>
     </html>
   );

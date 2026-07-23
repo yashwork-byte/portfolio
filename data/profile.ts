@@ -8,8 +8,20 @@ export const profile = {
   // Reword freely — this is the top-line tagline.
   tagline: "Applied ML — on-device models, agents, eval-first",
 
+  // Football framing (Old Trafford night-match theme).
+  kit: "08",
+  position: "CDM · Box-to-box engineer · Barclays UK",
+
   // Header avatar in public/ (face-cropped square). Empty string hides it.
   avatar: "/me-avatar.jpg",
+
+  // Scoreboard stat tiles (count up on scroll).
+  scoreboard: [
+    { value: 4, suffix: "", label: "Projects shipped" },
+    { value: 1590, suffix: "", label: "Codeforces rating" },
+    { value: 800, suffix: "+", label: "Problems solved" },
+    { value: 2, suffix: "", label: "Barclays spells" },
+  ],
 
   // Edit freely — 2–3 terse lines, no marketing tone.
   about:
