@@ -5,8 +5,8 @@ export type Link = {
 
 export const profile = {
   name: "Yash Tarun",
-  // Reword freely — this is the top-line tagline.
-  tagline: "Applied ML — on-device models, agents, eval-first",
+  // The top-line tagline.
+  tagline: "Applied ML: on-device models, agents, and eval-first",
 
   // Football framing (Old Trafford night-match theme).
   kit: "08",
@@ -23,12 +23,13 @@ export const profile = {
     { value: 2, suffix: "", label: "Barclays spells" },
   ],
 
-  // Edit freely — 2–3 terse lines, no marketing tone.
   about:
-    "Technology Analyst at Barclays UK and a CS grad from IIT (ISM) Dhanbad. " +
-    "I build applied-ML systems — AI incident-triage tooling on Claude models at work, " +
-    "and on-device models, agents, and eval-first pipelines of my own. " +
-    "Codeforces Specialist, 800+ problems solved.",
+    "I'm a Technology Analyst at Barclays UK and a computer science grad from " +
+    "IIT (ISM) Dhanbad. At work I build AI tooling for incident triage on Barclays' " +
+    "Claude models. In my own time I keep shipping on-device models, agents, and " +
+    "eval-first pipelines, mostly because I like getting ML to actually hold up under " +
+    "real constraints instead of in a demo. Off the clock I'm a Manchester United fan " +
+    "through and through, and there's usually Pink Floyd or Guns N' Roses playing while I code.",
 
   // Served from public/resume.pdf. Empty string hides the Résumé link.
   resumeHref: "/resume.pdf",

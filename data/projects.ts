@@ -19,11 +19,11 @@ export const projects: Project[] = [
     name: "MemoryPlace",
     blurb: "neutral leaderboard for agentic-memory architectures",
     description:
-      "An open, neutral place to compare agent-memory stacks — mem0, Zep, Letta, and the rest — on the same footing. You pick an architecture, it's evaluated the same way, and only runs from the shared Hub are allowed onto the leaderboard, so the numbers stay reproducible.",
+      "There are a dozen agent-memory tools out now (mem0, Zep, Letta and the rest) and no honest way to line them up. MemoryPlace runs them all through the same benchmark, and only submissions from the shared Hub count, so the leaderboard numbers actually mean something.",
     highlights: [
-      "LLM-judge scoring alongside latency and token-cost",
-      "evals run on Modal; public-only, reproducible submissions",
-      "recommender + marketplace on top of the benchmark",
+      "scored by an LLM judge, plus latency and token cost",
+      "evals run on Modal; every submission is public and reproducible",
+      "a recommender and marketplace sit on top of the benchmark",
     ],
     tags: ["evals", "modal", "leaderboard"],
     repo: "https://github.com/yashwork-byte/memoryplace",
@@ -35,11 +35,11 @@ export const projects: Project[] = [
     name: "CodeComp",
     blurb: "codebase QA + agentic edits",
     description:
-      "Ask questions about an unfamiliar codebase, or ask it to make a change — reviewed, verified, and re-indexed. Functions are extracted with tree-sitter and embedded into Qdrant; retrieval blends vector similarity with call-graph expansion so answers pull in the right upstream and downstream context.",
+      "Ask it about a codebase you've never seen, or tell it to make a change and it reviews, verifies and re-indexes the result. It pulls functions out with tree-sitter, stores them in Qdrant, and combines plain vector search with call-graph expansion so the answer includes the code that actually matters up and down the chain.",
     highlights: [
-      "multi-agent routing / reasoning / debugging with context compression",
-      "call-graph-aware retrieval cut irrelevant context ~30%",
-      "handles Python, JS/TS, Go, Java, Rust, C/C++",
+      "routing, reasoning and debugging agents, with context compression",
+      "call-graph-aware retrieval cut irrelevant context by about 30%",
+      "works across Python, JS/TS, Go, Java, Rust and C/C++",
     ],
     tags: ["tree-sitter", "qdrant", "langfuse"],
     repo: "https://github.com/yashwork-byte/CompCode",
@@ -51,11 +51,11 @@ export const projects: Project[] = [
     name: "Suno",
     blurb: "on-device WhatsApp voice-note digester",
     description:
-      "Speak a WhatsApp-style voice note and Suno files it — transcribed, translated, and searchable — entirely on-device. Language is auto-detected across Hindi, Tamil, Bengali and more, notes are grouped by speaker, and you can ask questions across everything you've recorded.",
+      "Record a voice note the way you would on WhatsApp and Suno turns it into something you can actually search, all on the phone itself. It works out the language on its own (Hindi, Tamil, Bengali and more), keeps notes grouped by who was talking, and lets you ask questions across everything you've saved.",
     highlights: [
-      "IndicConformer STT + Sarvam-Translate 4B, running offline",
+      "IndicConformer for speech, Sarvam-Translate 4B for translation, fully offline",
       "sqlite-vec semantic search over your own notes",
-      "per-speaker digests from raw voice input",
+      "turns rambling voice notes into per-speaker digests",
     ],
     tags: ["IndicConformer", "Sarvam-Translate", "sqlite-vec"],
     repo: "https://github.com/yashwork-byte/voice-note-digester",
@@ -67,11 +67,11 @@ export const projects: Project[] = [
     name: "Field-naturalist logbook",
     blurb: "offline bird-ID logbook",
     description:
-      "Point it at a bird photo and a fine-tuned LFM2-VL identifies the species and writes a structured observation — species, taxonomy, and observed traits — small enough to run offline in the field. Built for the Liquid AI hackathon series.",
+      "Point it at a photo of a bird and a fine-tuned LFM2-VL tells you the species and writes up a proper observation, taxonomy and the traits it spotted included. It's small enough to run offline out in the field. I built it for the Liquid AI hackathon.",
     highlights: [
-      "fine-tuned LFM2.5-VL-1.6B vision-language model",
-      "structured JSON observations, not just a label",
-      "on-device, no connectivity required",
+      "fine-tuned the LFM2.5-VL-1.6B vision-language model",
+      "gives you a structured observation, not just a label",
+      "runs on-device with no connection needed",
     ],
     tags: ["LFM2-VL", "fine-tuning", "on-device"],
     repo: "https://github.com/yashwork-byte/field-naturalist-logbook",

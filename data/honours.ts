@@ -6,23 +6,23 @@ export type Honour = {
 // "Trophy cabinet" — real achievements from the résumé.
 export const honours: Honour[] = [
   {
-    title: "Codeforces — Global Rank < 100",
-    detail: "Round 970. Specialist, rating 1590.",
+    title: "Top 100 in the world on Codeforces",
+    detail: "Finished under rank 100 globally in Round 970. Rated Specialist at 1590.",
   },
   {
-    title: "CodeChef — Global Rank 53",
-    detail: "Round 144. 4★, rating 1892.",
+    title: "Global rank 53 on CodeChef",
+    detail: "Round 144. 4-star, rated 1892.",
   },
   {
-    title: "Hackfest IIT (ISM) 2022 — Runner-up",
-    detail: "2nd place, hackathon organized by Atlassian.",
+    title: "Runner-up at Hackfest, IIT (ISM) 2022",
+    detail: "Second place at the hackathon run by Atlassian.",
   },
   {
     title: "800+ problems solved",
-    detail: "Across Codeforces, CodeChef, and LeetCode (1686).",
+    detail: "Across Codeforces, CodeChef and LeetCode (rated 1686).",
   },
   {
-    title: "JEE Advanced 2020 — Top 1%ile",
-    detail: "Top 1 percentile in JEE Mains and Advanced.",
+    title: "Top 1% in JEE 2020",
+    detail: "Top percentile in both JEE Mains and JEE Advanced.",
   },
 ];

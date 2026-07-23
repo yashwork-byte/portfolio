@@ -96,6 +96,10 @@ export default function Home() {
                     <dt>Form</dt>
                     <dd>Codeforces Specialist</dd>
                   </div>
+                  <div>
+                    <dt>Off the pitch</dt>
+                    <dd>Man Utd, Pink Floyd, Guns N&apos; Roses</dd>
+                  </div>
                 </dl>
               </div>
             </div>
@@ -159,7 +163,7 @@ export default function Home() {
                         href={primary}
                         target="_blank"
                         rel="noreferrer"
-                        aria-label={`${p.name} — open`}
+                        aria-label={`Open ${p.name}`}
                       >
                         <Image
                           src={p.thumb}
@@ -257,7 +261,7 @@ export default function Home() {
 
         {/* ---------- full time (contact) ---------- */}
         <footer id="contact" className="fulltime">
-          <div className="ft-line">— Full Time —</div>
+          <div className="ft-line">· Full Time ·</div>
           <div className="ft-socials">
             {profile.links.map((l) => (
               <a key={l.label} href={l.href} target="_blank" rel="noreferrer">

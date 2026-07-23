@@ -20,7 +20,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.tagline}`,
+  title: `${profile.name} · ${profile.tagline}`,
   description: profile.tagline,
   openGraph: {
     title: profile.name,
