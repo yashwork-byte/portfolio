@@ -60,7 +60,17 @@ export default function Home() {
             </div>
             <div className="profile">
               <div className="profile-badge">
-                <Crest className="profile-crest" />
+                {profile.avatar ? (
+                  <Image
+                    className="profile-photo"
+                    src={profile.avatar}
+                    alt={profile.name}
+                    fill
+                    sizes="160px"
+                  />
+                ) : (
+                  <Crest className="profile-crest" />
+                )}
               </div>
               <div>
                 <p className="profile-bio">{profile.about}</p>

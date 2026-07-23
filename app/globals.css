@@ -289,14 +289,17 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 22px 14vh; }
   padding: 1.6rem;
 }
 .profile-badge {
+  position: relative;
   aspect-ratio: 1;
   border-radius: 10px;
-  background: radial-gradient(circle at 50% 30%, rgba(220,41,28,0.14), transparent 60%), #0e1318;
+  overflow: hidden;
+  background: #0e1318;
   border: 1px solid var(--hair);
+  box-shadow: 0 0 0 3px rgba(220, 41, 28, 0.28) inset;
   display: grid;
   place-items: center;
-  padding: 1rem;
 }
+.profile-photo { object-fit: cover; object-position: center; }
 .profile-crest { width: 84px; height: 92px; }
 .profile-bio { margin: 0; color: #d7dbe0; }
 .profile-meta { margin: 1rem 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem 1.4rem; }
