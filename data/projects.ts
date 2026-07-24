@@ -21,7 +21,7 @@ export const projects: Project[] = [
     description:
       "There are a dozen agent-memory tools out now (mem0, Zep, Letta and the rest) and no honest way to line them up. MemoryPlace runs them all through the same benchmark, and only submissions from the shared Hub count, so the leaderboard numbers actually mean something.",
     highlights: [
-      "scored by an LLM judge, plus latency and token cost",
+      "scored on LoCoMo and LongMemEval with F1, ROUGE-L, SBERT and more",
       "evals run on Modal; every submission is public and reproducible",
       "a recommender and marketplace sit on top of the benchmark",
     ],
@@ -53,11 +53,11 @@ export const projects: Project[] = [
     description:
       "Record a voice note the way you would on WhatsApp and Suno turns it into something you can actually search, all on the phone itself. It works out the language on its own (Hindi, Tamil, Bengali and more), keeps notes grouped by who was talking, and lets you ask questions across everything you've saved.",
     highlights: [
-      "IndicConformer for speech, Sarvam-Translate 4B for translation, fully offline",
+      "IndicConformer-600M for speech, a LoRA fine-tune of Gemma-3-4B for the digest, fully offline",
       "sqlite-vec semantic search over your own notes",
-      "turns rambling voice notes into per-speaker digests",
+      "action-item F1 from 0.55 to 0.76 on a held-out eval",
     ],
-    tags: ["IndicConformer", "Sarvam-Translate", "sqlite-vec"],
+    tags: ["IndicConformer", "Gemma-3-4B", "LoRA", "sqlite-vec"],
     repo: "https://github.com/yashwork-byte/voice-note-digester",
     demo: "https://voice-note-digester.vercel.app/",
     thumb: "/thumbs/suno.png",
